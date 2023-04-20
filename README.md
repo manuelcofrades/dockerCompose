@@ -1,4 +1,4 @@
-#Practica de docker compose
+# Practica de docker compose
 ## Con automatización del proceso para ubuntu22.04:
 * Se crea un directorio en local
 * En ese directorio local se crea el docker-compose.yml con el siguiente contenido, que será el que levante los contenedores docker
@@ -132,11 +132,10 @@ end
 * Si incluyo en este sistema operativo que me instale el docker-compose da fallo y no me levanta la máquina virtual
 
 * Se levanta el entorno , desde consola en el directorio con 
-  -vagrant up
+  - vagrant up
 
 * Tengo que instalar el docker-compose, para ello me conecto a la máquna virtual por ssh
-
- -vagrant ssh
+  - vagrant ssh
 
 Instalo el docker-compose con los siguientes comandos y compruebo versión:
 ```
