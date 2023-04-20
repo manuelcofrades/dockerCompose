@@ -37,7 +37,7 @@ volumes:
     mariadb_data:
 ```
 
-* Se crea el vagrantfile con el siguiente contenido:
+* Se crea el Vagrantfile con el siguiente contenido:
 ```
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
@@ -106,7 +106,7 @@ volumes:
     mariadb_data:
 ```
 
-* Se crea el vagrantfile con el siguiente contenido:
+* Se crea el Vagrantfile con el siguiente contenido:
 ```
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
@@ -129,7 +129,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision "docker"
 end
 ```
-* Si incluyo en este sistema operativo que me instale el docker-compose da fallo y no me levanta la máquina virtual
+* Si incluyo en este sistema operativo que me instale el docker-compose da errores y no me levanta la máquina virtual, con lo cual decido instalarlo
+una vez levantada la máquina virtual
 
 * Se levanta el entorno , desde consola en el directorio con 
   - vagrant up
