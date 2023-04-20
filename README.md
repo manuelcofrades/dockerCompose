@@ -182,5 +182,5 @@ docker-compose up -d
 
 * Tengo en http://localhost:8080/ corriendo la aplicación
 
-![Imagen1](https://github.com/blob/main/wordpress.png)
+![Imagen1](https://github.com/manuelcofrades/dockerCompose/blob/main/wordpress.png)
 
