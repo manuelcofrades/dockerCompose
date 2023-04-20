@@ -129,16 +129,16 @@ Vagrant.configure("2") do |config|
   config.vm.provision "docker"
 end
 ```
-*Si incluyo en este sistema operativo que me instale el docker-compose da fallo y no me levanta la máquina virtual
+* Si incluyo en este sistema operativo que me instale el docker-compose da fallo y no me levanta la máquina virtual
 
 * Se levanta el entorno , desde consola en el directorio con 
 vagrant up
 
-*Tengo que instalar el docker-compose, para ello
+*Tengo que instalar el docker-compose, para ello me conecto a la máquna virtual por ssh
 
-vagrant ssh
+ -vagrant ssh
 
-Instalo el docker-compose:
+Instalo el docker-compose con los siguientes comandos y compruebo versión:
 ```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
@@ -177,8 +177,8 @@ volumes:
     wordpress_data:
     mariadb_data:
 ```
-* Ahora levanto los contenedores
-docker-compose up -d
+* Ahora levanto los contenedores para que me corra la aplicación
+  - docker-compose up -d
 
 * Tengo en http://localhost:8080/ corriendo la aplicación
 
